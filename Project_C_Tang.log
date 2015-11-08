@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.5.24)  8 NOV 2015 00:29
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.5.24)  8 NOV 2015 15:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -108,13 +108,40 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@inbox=\box28
 \enitdp@description=\count99
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks23
 )
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is not detected.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count100
+\Gm@cntv=\count101
+\c@Gm@tempcnt=\count102
+\Gm@bindingoffset=\dimen113
+\Gm@wd@mp=\dimen114
+\Gm@odd@mp=\dimen115
+\Gm@even@mp=\dimen116
+\Gm@layoutwidth=\dimen117
+\Gm@layoutheight=\dimen118
+\Gm@layouthoffset=\dimen119
+\Gm@layoutvoffset=\dimen120
+\Gm@dimlist=\toks24
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
 (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
 
@@ -130,41 +157,14 @@ Package graphics Info: Driver file: xetex.def on input line 94.
 File: xetex.def 2015/03/25 v4.04 LaTeX color/graphics driver for XeTeX (TeX Liv
 e/RRM/JK)
 ))
-\Gin@req@height=\dimen113
-\Gin@req@width=\dimen114
+\Gin@req@height=\dimen121
+\Gin@req@width=\dimen122
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks24
-\verbatim@line=\toks25
+\every@verbatim=\toks25
+\verbatim@line=\toks26
 \verbatim@in@stream=\read1
-)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2010/09/12 v5.6 Page Geometry
-
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is not detected.
-)
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifvtex.sty
-Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
-Package ifvtex Info: VTeX not detected.
-)
-(/usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-\Gm@cnth=\count100
-\Gm@cntv=\count101
-\c@Gm@tempcnt=\count102
-\Gm@bindingoffset=\dimen115
-\Gm@wd@mp=\dimen116
-\Gm@odd@mp=\dimen117
-\Gm@even@mp=\dimen118
-\Gm@layoutwidth=\dimen119
-\Gm@layoutheight=\dimen120
-\Gm@layouthoffset=\dimen121
-\Gm@layoutvoffset=\dimen122
-\Gm@dimlist=\toks26
 )
 
 LaTeX Warning: Unused global option(s):
@@ -173,18 +173,18 @@ LaTeX Warning: Unused global option(s):
 (./Project_C_Tang.aux)
 \openout1 = `Project_C_Tang.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -220,17 +220,20 @@ LaTeX Font Info:    ... okay on input line 17.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 19.
+LaTeX Font Info:    Try loading font information for U+msa on input line 20.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 19.
+LaTeX Font Info:    Try loading font information for U+msb on input line 20.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-File: 1aBA.png Graphic file (type QTm)
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
+ []
+
+File: 1aBA.png Graphic file (type QTm)
 <use  "1aBA.png" >
 File: 1aSP.png Graphic file (type QTm)
  <use  "1aSP.png" >
@@ -238,26 +241,78 @@ File: 1aBASPscatter.png Graphic file (type QTm)
  <use  "1aBASPscatter.png" > [1
 
 ]
-File: 1aBARetSPTRscatter.png Graphic file (type QTm)
+File: 1bBARetSPTRscatter.png Graphic file (type QTm)
 
-<use  "1aBARetSPTRscatter.png" >
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 37.
+<use  "1bBARetSPTRscatter.png" >
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 39.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 37.
-File: 1aBARetVIXscatter.png Graphic file (type QTm)
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 39.
+File: 1cBARetVIXscatter.png Graphic file (type QTm)
 
-<use  "1aBARetVIXscatter.png" > [2] [3] (./Project_C_Tang.aux) ) 
+<use  "1cBARetVIXscatter.png" > [2]
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+ []
+
+File: 2a_overall.png Graphic file (type QTm)
+<use  "2a_overall.png" > [3]
+File: 2a_long.png Graphic file (type QTm)
+ <use  "2a_long.png" >
+File: 2a_short.png Graphic file (type QTm)
+ <use  "2a_short.png" >
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
+
+ []
+
+File: 2b.png Graphic file (type QTm)
+<use  "2b.png" >
+File: 2b_2.png Graphic file (type QTm)
+ <use  "2b_2.png" > [5]
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
+
+ []
+
+File: 2c.png Graphic file (type QTm)
+<use  "2c.png" >
+File: 2c_2.png Graphic file (type QTm)
+ <use  "2c_2.png" >
+File: 2d.png Graphic file (type QTm)
+ <use  "2d.png" >
+File: 2d_2.png Graphic file (type QTm)
+ <use  "2d_2.png" >
+[6]
+File: 3a.png Graphic file (type QTm)
+ <use  "3a.png" > [7]
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
+
+ []
+
+File: 3d.png Graphic file (type QTm)
+<use  "3d.png" > [8]
+File: 3d_2.png Graphic file (type QTm)
+ <use  "3d_2.png" > [9] (./Project_C_Tang.aux) ) 
 Here is how much of TeX's memory you used:
- 2335 strings out of 493706
- 30773 string characters out of 6145769
- 92816 words of memory out of 5000000
- 5659 multiletter control sequences out of 15000+600000
- 10737 words of font info for 41 fonts, out of 8000000 for 9000
+ 2363 strings out of 493706
+ 31019 string characters out of 6145769
+ 94843 words of memory out of 5000000
+ 5673 multiletter control sequences out of 15000+600000
+ 11391 words of font info for 43 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 27i,6n,32p,663b,200s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,6n,32p,663b,198s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Project_C_Tang.pdf (3 pages).
+Output written on Project_C_Tang.pdf (9 pages).

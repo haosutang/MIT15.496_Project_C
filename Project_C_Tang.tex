@@ -4,33 +4,35 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{enumitem}
-\setlist[enumerate]{itemsep=0mm}
-\setlength\parindent{0pt}
+\usepackage[margin=1in]{geometry}
 \usepackage{graphicx}
 \usepackage{verbatim}
+\setlist[enumerate]{itemsep=0mm}
+\setlength\parindent{0pt}
+\renewcommand{\thesubsection}{\thesection.\alph{subsection}}
 
 
 \author{Haosu Tang}
 \title{Project C}
-\usepackage[margin=1in]{geometry}
 
 \begin{document}
 
 \maketitle
 
-\section{1.Beta}
-I chose BA (Boeing company) to do this analysis. Data range: 2008-01-01 to 2009-12-31, during which the financial crisis happened and the market was highly volatile.
+\section{Beta}
+I chose BA (Boeing company) to do this analysis. Data range: 2008-01-01 to 2009-12-31, during which the financial crisis happened and the market was highly volatile.\\
 
-(a). Time series plots of the 3-month rolling beta, S\&P 500 and scatter plot of beta vs S\&P500.
+\textbf{(a)}. Time series plots of the 3-month rolling beta, S\&P 500 and scatter plot of beta vs S\&P500.
 \begin{center}
 \includegraphics[width=4in,keepaspectratio]{1aBA}
 \includegraphics[width=4in,keepaspectratio]{1aSP}
 \includegraphics[width=4in,keepaspectratio]{1aBASPscatter}
 \end{center}
 
-(b). A scatter plot of 1-day stock returns vs. the SPTR 1-day return and the linear regression fitting line.
+
+\textbf{(b)}. A scatter plot of 1-day stock returns vs. the SPTR 1-day return and linear regression line.
 \begin{center}
-\includegraphics[width=4in,keepaspectratio]{1aBARetSPTRscatter}
+\includegraphics[width=4in,keepaspectratio]{1bBARetSPTRscatter}
 \end{center}
 Equation for linear regression:
 \begin{itemize}
@@ -38,9 +40,10 @@ Equation for linear regression:
 \item (Intercept = 0): $ \hat{y} = 0.92509641 \hat{x}$
 \end{itemize}
 
-(c). A scatter plot of 1-day stock returns vs. the VIX 1-day return and the linear regression fitting line.
+
+\textbf{(c)}. A scatter plot of 1-day stock returns vs. the VIX 1-day return and the linear regression line.
 \begin{center}
-\includegraphics[width=4in,keepaspectratio]{1aBARetVIXscatter}
+\includegraphics[width=4in,keepaspectratio]{1cBARetVIXscatter}
 \end{center}
 \begin{itemize}
 \item (With intercept): $ \hat{y} = -0.00084599 -0.23941314 \hat{x}$
@@ -48,8 +51,132 @@ Equation for linear regression:
 \end{itemize}
 
 
-\section{2.Performance attribution}
-(a) Using data from strategy "Contra01" from OLAP database for 2005-2009, analyze the performance. I plotted the "Weighted Return Tc" and "1 month Volatility" for this period. To note, "1 month Volatility" and "3 month Volatility" have exactly the same 
+\section{Performance attribution}
+
+\textbf{(a)}. Using data from strategy "Contra01" from OLAP database for 2005-2009, analyze the performance. I plotted the "Weighted Return Tc" and "1 month Volatility" for this period. To note, "1 month Volatility" and "3 month Volatility" have exactly the same values. Given these large volatility measures, I think the these values are already annualized. Otherwise, volatility should multiply by square root of number of the months and Sharpe ratio divide. With risk free rate 0, I make table for the annualized return, volatility and Sharpe ratio.\\
+
+Case 1: \textit{Overall}
+\begin{center}
+\includegraphics[scale=0.5,keepaspectratio]{2a_overall}
+\newline
+
+\begin{tabular}{l | l l l}
+Year & Return & Volatility & Sharpe Ratio\\
+\hline
+2005	 & 73.18\% & 82.85\% & 0.8833\\
+2006	 & 43.86\% & 74.49\% & 0.5888\\
+2007	&-13.61\%	&77.76\%	&-0.1750\\
+2008	&60.68\%	&136.51\%	&0.4445\\
+2009	&31.09\%	&145.30\%	&0.2140\\
+\hline
+Total&	195.20\%	&100.36\%	&1.9450
+\end{tabular}
+\end{center}
+
+
+Case 2: \textit{Long}
+\begin{center}
+\includegraphics[scale=0.5,keepaspectratio]{2a_long}
+\newline
+
+\begin{tabular}{l|lll}
+Year & Return & Volatility & Sharpe Ratio\\
+\hline
+2005	&10.02\%	&91.67\%	&0.1093\\
+2006	&10.70\%	&81.66\%	&0.1310\\
+2007	&-49.36\%	&86.45\%	&-0.5710\\
+2008	&-74.63\%	&150.30\%	&-0.4965\\
+2009	&11.09\%	&158.36\%	&0.0700\\
+\hline
+Total&	-92.18\%	&110.41\%	&-0.8349
+\end{tabular}
+\end{center}
+
+
+Case 3: \textit{Short}
+\begin{center}
+\includegraphics[scale=0.5,keepaspectratio]{2a_short}
+\newline
+
+\begin{tabular}{l|lll}
+Year & Return & Volatility & Sharpe Ratio\\
+\hline
+2005	&63.16\%	&74.07\%	&0.8527\\
+2006	&33.15\%	&67.33\%	&0.4924\\
+2007	&35.75\%	&69.09\%	&0.5174\\
+2008	&135.31\%	&122.76\%	&1.1022\\
+2009	&20.00\%	&132.30\%	&0.1512\\
+Total&	287.38\%	&90.34\%	&3.1811
+\end{tabular}
+\end{center}
+
+
+\textbf{(b)}. Regrouping the data by SIC sector and filter only the 2006. Manufacturing contributes the most to the absolute overall return. It contributes 801.83\% to the overall 1617.46\%, i.e. 49.57\%.\\
+
+Plot and table:
+\begin{center}
+\includegraphics[scale=0.5,keepaspectratio]{2b}
+\includegraphics[scale=0.5,keepaspectratio]{2b_2}
+\end{center}
+
+\textbf{(c)}. Regrouping the data by GICS sector and filter only the 2006. Information technology contributes the most to the absolute overall return. It contributes 266.69\% to the overall 895.52\%, i.e. 29.78\%.\\
+
+Plot and table:
+\begin{center}
+\includegraphics[scale=0.5,keepaspectratio]{2c}
+\includegraphics[scale=0.5,keepaspectratio]{2c_2}
+\end{center}
+
+\textbf{(d)}. The time series plot of strategy one-day return and plot reorganized into ascending order:
+
+\begin{center}
+\includegraphics[scale=0.5,keepaspectratio]{2d}
+\includegraphics[scale=0.5,keepaspectratio]{2d_2}
+\end{center}
+
+This returns 1260 observations. The last one is total, so altogether 1259 observations in this 5-year range. 673 of them are positive (>0), 6 returns are 0, and 580 are negative, corresponding 53.46\% winners and 46.07 \% losers. Of all the winners, median return is 0.85\%. Of all the losers, median return is -0.82\%.
+
+\section{Risk measurement}
+
+\textbf{(a)}. I extracted daily weight data for each sector over the period 2005-2009 in the pivot table. The following shows a table of max (highest), min (lowest) and mean of the 1259 days.
+
+\includegraphics[scale=0.4,keepaspectratio]{3a}
+
+Among these sectors, \textit{Comsumer Staples, Telecommunication Services, Utilities} are ones stayed within $\pm 10\%$ of the portfolio weight throughout.\\
+
+\textbf{(b)}.On 9/15/12008, the GICS sector weights are: 
+NA	11.27\%; Energy	-7.04\%; Materials	0.00\%; Industrials	-2.82\%; Consumer Discretionary	-8.45\% Consumer Staples	-1.41\%; Health Care	7.04\%; Financials	-2.82\%; Information Technology	5.63\%; Grand Total	1.41\%.
+
+
+The most unbalanced position is NA 11.27\%, which are investments cannot be categorized in the sectors. The long positions sum up to be 23.94\%. Total short is 22.54\%. The portfolio return on that day is -8.06\%.\\
+
+\textbf{(c)}. On 2/27/2007, the GICS sector weights are:
+NA	6.10\%; Energy	-1.22\%; Materials	0.00\%; Industrials	4.88\%; Consumer Discretionary	1.22\%; Consumer Staples	2.44\%; Health Care	0.00\%; Financials	1.22\%; Information Technology	-14.63\%; Telecommunication Services	1.22\%; Grand Total	1.22\%.
+
+
+The most unbalanced position is Information Technology -14.63\%. The long positions sum up to be 17.08\%. Total short is 15.85\%. The portfolio return on that day is -4.41\%.\\
+
+
+\textbf{(d)}. Such strategy will not be market neutral on its own. Unlike the original strategy of looking at all universe of the securities tradable and developing weights that can be made market-neutral, the sub-strategy will be correlated with other sectors and will not be market neutral standing on its own. As Prof. Mende pointed out in the forum: The signals depend only on the individual stock returns relative to the market without any other references or inputs. Therefore there is no reason to expect a priori that the sectors would be neutral.
+
+Plots of the \textit{net} long/short exposure:
+
+\begin{center}
+\includegraphics[width=4in,keepaspectratio]{3d}
+\end{center}
+
+Plots of the \textit{gross} long/short exposure, where blue stands for the long positions, and green short:
+
+\begin{center}
+\includegraphics[width=4in,keepaspectratio]{3d_2}
+\end{center}
+
+The substrategy became more volatile (larger variance) throughout this time frame, due to the highly volatile market.
+
+\section{Correlation dynamics}
+
+
+
 
 
 %
