@@ -134,7 +134,7 @@ Plot and table:
 \includegraphics[scale=0.5,keepaspectratio]{2d_2}
 \end{center}
 
-This returns 1260 observations. The last one is total, so altogether 1259 observations in this 5-year range. 673 of them are positive (>0), 6 returns are 0, and 580 are negative, corresponding 53.46\% winners and 46.07 \% losers. Of all the winners, median return is 0.85\%. Of all the losers, median return is -0.82\%.
+This returns 1260 observations. The last one is total, so altogether 1259 observations in this 5-year range. 673 of them are positive, 6 returns are 0, and 580 are negative, corresponding 53.46\% winners and 46.07 \% losers. Of all the winners, median return is 0.85\%. Of all the losers, median return is -0.82\%.
 
 \section{Risk measurement}
 
@@ -144,7 +144,7 @@ This returns 1260 observations. The last one is total, so altogether 1259 observ
 
 Among these sectors, \textit{Comsumer Staples, Telecommunication Services, Utilities} are ones stayed within $\pm 10\%$ of the portfolio weight throughout.\\
 
-\textbf{(b)}.On 9/15/12008, the GICS sector weights are: 
+\textbf{(b)}.On 9/15/2008, the GICS sector weights are: 
 NA	11.27\%; Energy	-7.04\%; Materials	0.00\%; Industrials	-2.82\%; Consumer Discretionary	-8.45\% Consumer Staples	-1.41\%; Health Care	7.04\%; Financials	-2.82\%; Information Technology	5.63\%; Grand Total	1.41\%.
 
 
@@ -174,8 +174,23 @@ Plots of the \textit{gross} long/short exposure, where blue stands for the long 
 The substrategy became more volatile (larger variance) throughout this time frame, due to the highly volatile market.
 
 \section{Correlation dynamics}
+\textbf{(a,b,c,d)}. Two plots: average correlation, index realized variance, variance 0, variance 1, for 1-month and 3-month correlation window. I extracted data from indexmember, fact\_equity, view\_fact\_index, view\_fact\_indexmember.
 
+\begin{center}
+\includegraphics[width=6in,keepaspectratio]{4_1}
+\includegraphics[width=6in,keepaspectratio]{4_2}
+\end{center}
 
+\textbf{(e)}. For both 1-month window and 3-month window, the maximum correlation happened on 2008-11-21. For 1-month window, it's 0.8310979. For 3-month window, it's 0.7840061.\\
+
+\textbf{(f)}. Constraints for the four values and whether they hold in this period:
+\begin{enumerate}
+\item index realized variance, variance 0, variance 1 larger than 0. Hold.
+\item variance 0 (zero correlation) $<$ index realized variance $<$ variance 1 (one correlation). Hold.
+\item Correlation between -1 and 1. Under this specific condition, it's supposed to be positive because every stock is a component of and contributes to the index. Thus the sum should be positive correlated. Hold.
+\end{enumerate}
+
+\textbf{(g)}. The positive correlation constraint will be violated if the weights are not positive.
 
 
 

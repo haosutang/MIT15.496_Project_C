@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.5.24)  8 NOV 2015 15:37
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.5.24)  8 NOV 2015 20:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -305,14 +305,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--158
 File: 3d.png Graphic file (type QTm)
 <use  "3d.png" > [8]
 File: 3d_2.png Graphic file (type QTm)
- <use  "3d_2.png" > [9] (./Project_C_Tang.aux) ) 
+ <use  "3d_2.png" >
+Overfull \hbox (27.44942pt too wide) in paragraph at lines 177--178
+\OT1/cmr/m/n/10.95 month and 3-month cor-re-la-tion win-dow. I ex-tracted data 
+from in-dexmem-ber, fact[]equity, view[]fact[]index,
+ []
+
+File: 4_1.png Graphic file (type QTm)
+<use  "4_1.png" >
+File: 4_2.png Graphic file (type QTm)
+ <use  "4_2.png" > [9]
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
+
+ []
+
+[10] [11] (./Project_C_Tang.aux) ) 
 Here is how much of TeX's memory you used:
- 2363 strings out of 493706
- 31019 string characters out of 6145769
+ 2371 strings out of 493706
+ 31122 string characters out of 6145769
  94843 words of memory out of 5000000
- 5673 multiletter control sequences out of 15000+600000
+ 5679 multiletter control sequences out of 15000+600000
  11391 words of font info for 43 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 27i,6n,32p,663b,198s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,6n,32p,663b,220s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Project_C_Tang.pdf (9 pages).
+Output written on Project_C_Tang.pdf (11 pages).
